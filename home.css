@@ -1,10 +1,12 @@
-
-
+/* .carousel-item {
+  height: 500px;
+  opacity: 0.75;
+  border: 1px white;
+} */
 
 .carousel-item {
   height: 500px;
   opacity: 0.75;
-
 }
 
 .carousel-item img {
@@ -18,4 +20,19 @@
 .navbar .navbar-brand {
     color: whitesmoke;
     font-family: Roboto;
+}
+
+.navbar {
+  background-color: black;
+  margin-bottom: 2rem;
+}
+
+.media .mr-3 {
+  max-height: 500px;
+  max-width: auto;
+}
+
+.media .mt-0,
+.intro {
+  color: white;
 }
