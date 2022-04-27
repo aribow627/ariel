@@ -1,4 +1,26 @@
+/*NAVBAR CSS*/
+.nav{
+  background-color: #00092C;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link:hover{
+  color:pink;
+}
+
+.nav li a{
+  color: #edf0f1;
+  
+}
+
+
 /* INTRO CSS */
+
+.intro{
+  padding-top: 60px;
+}
 .intro-content{
   display: flex;
   justify-content: center;
@@ -15,6 +37,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 #intro-arrow{
@@ -28,16 +51,33 @@ img{
   padding-bottom: 20%;
 }
 
+/*ABOUT ME CSS*/
+
 
 /* PORTFOLIO GALLERY CSS */
 
 
+
 /* FOOTER/ CONTACT CSS */
-footer li{
-  list-style: none;
-}
 
 footer{
-  display: flex;
-  justify-content: ;
+  background-color: #00092C; 
+ 
 }
+
+#contact-me{
+  color:#edf0f1;
+  padding: 0px 20px;
+}
+
+footer li{
+  list-style: none;
+  display: inline-block;
+  
+}
+
+footer li a{
+  color:#edf0f1;
+  padding: 0px 20px;
+}
+
