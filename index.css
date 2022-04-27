@@ -1,3 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100%;
+
+}
+
 /*NAVBAR CSS*/
 .nav{
   background-color: #00092C;
@@ -18,9 +38,7 @@
 
 /* INTRO CSS */
 
-.intro{
-  padding-top: 60px;
-}
+
 .intro-content{
   display: flex;
   justify-content: center;
@@ -45,13 +63,13 @@ img{
 }
 
 
-/*HERO IMAGE CSS*/
-.hero{
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
 
 /*ABOUT ME CSS*/
+.about-me{
+  background-color: aquamarine;
+  padding: 0;
+  margin: 0;
+}
 
 
 /* PORTFOLIO GALLERY CSS */
@@ -62,13 +80,11 @@ img{
 
 footer{
   background-color: #00092C; 
+  padding: 0;
+  margin: 0;
  
 }
 
-#contact-me{
-  color:#edf0f1;
-  padding: 0px 20px;
-}
 
 footer li{
   list-style: none;
