@@ -20,81 +20,145 @@
 <body>
 
 <!--Navigation Bar-->
-
+<div class="wrapper">
 <nav class="nav">
     <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="./aboutme.html">About Me</a>
+        <a class="nav-link" href="#about-me">About Me</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
     </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#game">Play A Game</a>
+        </li>
     <li class="nav-item">
-        <a class="nav-link" href="./contact.html">Contact Me</a>
+        <a class="nav-link" href="#socials-nav">Contact Me</a>
     </li>
+
+
 </nav>
 
-<!-----Navigation Bar End------>
+
+
 
 <!------Intro/Hero Image/Header Begin------>
-<div class="container">
 
-    <section id="intro" class="intro target-section">
+
+    <section class="-intro-section">
     
         <div class="intro-content">
     
-            <div class="column large-9 mob-full intro-text">
-                <h1>Hello, I'm Ariel</h3>
+            <div id="intro-text">
+                <h2>Hello, I'm Ariel</h2>
                 <h3>
                     Software Engineer <br>
                     and 2D Game Developer <br>
                     Based In Atlanta, GA.
-                </h1>
+                </h3>
             </div>
     
     
-            <div class="intro-grid">
-
+        <div class="intro-pic"><img src="images/ItMe.jpg">
+                <a href="#portfolio"><div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span></a>
             </div>
-            <div class="intro-pic"><img src="images/ItMe.jpg"></div>
-    
-        </div> <!-- END ROW -->
 
-        <!--SCROLL AREA | SCROLL FOR MORE-->
-
-        <div class="intro-scroll">
-            <a href="#about" class="intro-scroll-link smoothscroll">
-                Scroll For More
-            </a>
-        <i class="fa-solid fa-arrow-down" id="intro-arrow"></i>
+            <a href="#portfolio"><div id="more">Scroll for more</div></a>
         </div>
-    
+                
+        <div id="box">
+
+        </div>
+  
+                </div>
+                            
+            </div> 
+           
+
     </section> <!-- Intro End -->
 
+                <div id="socials">
+                    <h2>Contact Me</h2>
+                    <nav id="socials-nav">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </li>
+                    </nav>
+                </div>
 
-    <!--HERO IMAGE PLACE HOLDER GOES HERE-->
-    <section class="hero">
+
+    <!--2d GAME GOES HERE-->
+    <section class="game-section">
      
-
+    <div id="game">
     <canvas>    
 
     </canvas>
+    </div>
 
     </section>
 
+    <!-------Portfolio-------->
+    <section class="portfolio" id="portfolio">
+
+
+        <div class="container">
+            <img src="/images/pexels-blue.jpg"  class="img" alt="blue stock photo">
+            <img src="/images/pexels-brown-blue.jpg"  class="img" alt="blue stock photo">
+            <img src="/images/pexels-brown-orange.jpg"  class="img" alt="blue stock photo">
+            <img src="/images/pexels-pinkbg.jpg" class="img" alt="blue stock photo">
+            <img src="/images/pexels-blue.jpg"  class="img" alt="blue stock photo">
+            <img src="/images/pexels-brown-blue.jpg"  class="img" alt="blue stock photo">
+            <img src="/images/pexels-brown-orange.jpg" class="img" alt="blue stock photo">
+            <img src="/images/pexels-blue.jpg"  class="img" alt="blue stock photo">
+
+        </div>
+
+    </section>
+        
+        
+    <!-------Portfolio Ends-------->
+
+
     <!-------About Me-------->
     <section class="about-me-section">
-    <div class="about-me">
+    <div id="about-me">
         <h3 id="about-me-header">About Me</h3>
-        <p id="about-me-bio">
+        <p id="bio">
+
+            Sul Sul! (That's 'Hello' in Simlish!)
+
+            I am a Software Engineer from Atlanta, GA who enjoys Simming, coding, traveling, and discovering new eats around the city.
+
+            I have wanted to get into 2D gaming ever since I played Pokemon on my Gameboy many moons ago. I've also been into coding ever since I created my first website in a computer class back in elementary school. 
+
         
-            Let's put something right here for my About Me/Bio. We need at least a 
-            paragraph for styling, my guy. Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Sint quos officia saepe, dolore qui provident cum 
-            expedita! Dignissimos et voluptatibus repellat ratione itaque tempora 
-            consequuntur temporibus modi! Debitis, consequatur nisi!
+            
 
         </p>
 
@@ -108,96 +172,119 @@
 
         <section class="resume-section">
             <div class="resume">
-                <h3 id="resume-header">Experience</h3>
-                <p id="resume-para">
+                <h3 id="resume-header">Technical Experience</h3>
         
-                        <h3 id="exp">Technical Experience</h3>
+                        
 
-                                <h2 id="job-title">Software Engineer</h2>
+                                <h2 id="company-name">McKinsey & Company</h2>
+                                <h3 id="job-title">Software Engineer</h3>
+                                <h5 id="dates">March 2022 to Present</h5>
+                                <h5 id="location">Atlanta, GA</h5>
+                                <ul id="listed-exp">
+                                    <li>-To be filled in at later date</li>
+                                    <li>-To be filled in at later date</li>
+                                    <li>-To be filled in at later date</li>
+                                </ul>
 
-                                <h2 id="job-title">Desktop Support Technician II </h2><br>
-                                June 2021-September 2021
-                                <h2 id="company-name">Insight Global</h2>- Contract, Atlanta, GA 30096
-                                • Configured and installed new hardware and software for PC and Mac OS users via face-to-face onsite tech support center
-                                • Provided excellent communication skills to deliver network and remote access support for PC, MDM, and Mac OS users
-                                • Actively collaborated with leadership to offer support during the implementation of Microsoft Device Management system
-                                across 7600+ users from Phase I through production using Agile methodologies
-                                • Collaborated with various departments and stakeholders using Agile methodologies to facilitate the site-wide
-                                transition of 7600+ users from ServiceNow ITSM to Microsoft Dynamics CSM/ERP
+                                <h2 id="company-name">Insight Global - Contract</h2>
 
-                                <h2 id="job-title">Computer Hardware Technician</h2>
-                                March 2021-June 2021
-                                <h2 id="company-name">Virtucom- Contract</h2>, Peachtree Corners, GA
-                                • Diagnosed and repaired PC systems and Chromebooks received from 4 local school districts
-                                • Installed and configured Acer and Asus laptops, various Chromebook models, and tablets with school district managed
-                                software
-                                • Performed imaging and hardware break/fix on various models of laptops, tablets, and Chromebooks
-                                • Determined hardware/software problems, performed troubleshooting for connectivity issues on PC, laptop, and Chromebook
-                                devices
-                                • Actively maintained meticulous documentation of each repair within AutoTask PSA software
-                                <h2 id="company-name">Comforting Soles</h2>
-                                <h2 id="job-title"></h2>Desktop Support Technician II 
-                                July 2018-September 2020
+                                <h5 id="job-title">Desktop Support Technician II                                     
+                                </h5>
+                                <h5 id="dates">June 2021-September 2021</h5>
+                                <h5 id="location">Atlanta, GA</h5>
+
                                 
-                                Atlanta, GA
+                                <ul id="listed-exp">
+                                    <li>- Configured and installed new hardware and software for PC and Mac OS users via face-to-face onsite tech support center</li>
 
-                                • Created and modified Active Directory accounts and Security Group permissions
-                                • Facilitated the implementation of ServiceNow ITSM to manage troubleshooting tickets for employee workstations,
+                                    <li>- Provided excellent communication skills to deliver network and remote access support for PC, MDM, and Mac OS users</li>
+
+                                    <li>- Actively collaborated with leadership to offer support during the implementation of Microsoft Device Management system
+                                        across 7600+ users from Phase I through production using Agile methodologies</li>
+
+                                    <li>- Collaborated with various departments and stakeholders using Agile methodologies to facilitate the site-wide
+                                        transition of 7600+ users from ServiceNow ITSM to Microsoft Dynamics CSM/ERP</li>
+
+                                </ul>
+
+                                <h2 id="company-name">Virtucom - Contract
+                                </h2>
+
+                                <h3 id="job-title">Computer Hardware Technician
+                                </h2>
+
+                                <h5 id ="dates">March 2021-June 2021
+                                </h5>
+
+                                <h5 id="location">Peachtree Corners, GA
+                                </h5>
+
+                            <ul id="listed-exp">
+                                <li>- Diagnosed and repaired PC systems and Chromebooks received from 4 local school districts
+                                </li>
+
+                                <li>- Installed and configured Acer and Asus laptops, various Chromebook models, and tablets with school district managed
+                                    software</li>
+
+                                <li>- Performed imaging and hardware break/fix on various models of laptops, tablets, and Chromebooks
+                                </li>
+
+                                <li>- Determined hardware/software problems, performed troubleshooting for connectivity issues on PC, laptop, and Chromebook
+                                devices</li>
+
+                                <li>- Actively maintained meticulous documentation of each repair within AutoTask PSA software</li>
+                            </ul>
+
+                                <h2 id="company-name">Comforting Soles
+                                </h2>
+
+                                <h3 id="job-title">Desktop Support Technician II
+                                </h3>
+
+                                <h5 id="dates">July 2018-September 2020
+                                </h5>
+
+                                <h5 id="location">Atlanta, GA</h3>
+
+                            <ul id="listed-exp">
+                                <li>- Created and modified Active Directory accounts and Security Group permissions
+                                </li>
+
+                                <li>- Facilitated the implementation of ServiceNow ITSM to manage troubleshooting tickets for employee workstations,
                                 increasing efficiency within the IT department by 70%
-                                • Decreased employee downtime by 60% with the implementation of ServiceNow ITSM
+                                </li>
 
-        
-                </p>
-        
+                                <li>- Decreased employee downtime by 60% with the implementation of ServiceNow ITSM
+                                </li>
+                            </ul>
+
         
             </div>
         </section>
 
-  
+    </div>
     
-
-
-    <!-------Portfolio-------->
-
-
-    <!-------Portfolio Ends-------->
 
 
 
 
     <!-------Footer Begins-------->
-    <footer id="footer">
-        <nav id="footer">
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
 
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-            </li>
-
-        </nav>
-    </footer>
+    
 
     <!-------Footer Ends-------->
-    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <script src="./index.js">
+
+    
+    </script>
+
+   
 
 
 </body>
+
 </html>

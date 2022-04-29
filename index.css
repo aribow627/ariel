@@ -1,31 +1,32 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+ 
 }
 
 section{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 
-.container{
-  scroll-snap-type: y mandatory;
+.wrapper{
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
 }
 
 canvas{
-  background-color: #00092C;
+  background-color: aqua;
 }
+
 
 /*NAVBAR CSS*/
 .nav{
-  background-color: #00092C;
+  background-color: white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -36,9 +37,11 @@ canvas{
 }
 
 .nav li a{
-  color: #edf0f1;
+  color: black;
   
 }
+
+
 
 /*HEADER CSS*/
 h3{
@@ -51,66 +54,269 @@ h2{
   sans-serif;
 }
 
+h5{
+  font-family: 'Oswald',
+  sans-serif;
+  }
+
+
 
 
 /* INTRO CSS */
 
 
-.intro-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 img{
+  position: relative;
   height: 350px;
   padding: 20px;
   opacity:calc(80%)
+  
+}
+.intro-section{
+  position: relative;
+}
+.intro-content{
+  display: flex;
+  height:100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-image:  url('/images/pexels-stas-knop-1579240.jpg');
+  color: rgb(255, 255, 255);
+  
 }
 
+/* #box{
+  background-color: #06A8FF;
+  padding-left: 20px;
+  opacity: .7;
+  height: 100%;
+  width: 60%;
+  
+
+} */
+
 .intro-scroll{
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  
 }
 
-#intro-arrow{
-  padding-left: 10px;
+#more{
+  visibility: hidden;
+  color: azure;
 }
+
+.intro-pic{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/*ARROW ANIMATION*/
+.arrow {
+  justify-content: center;
+  
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #06A8FF;
+  border-right: 5px solid #06A8FF;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll1 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -.4s;
+}
+
+@keyframes scroll1 {
+  0% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+    border-bottom: 5px solid #ff6a06;
+    border-right: 5px solid #ff9b06;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+}
+
+
 
 
 
 /*ABOUT ME CSS*/
-.about-me{
-  background-color: aquamarine;
-  padding: 0;
-  margin: 0;
+
+#about-me{
+  background-color: black;
+  color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  text-align: left;
+  
+}
+
+#bio,
+#about-me-header{
+  text-align: justify;
+  margin: 20px 30px 20px 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+/* PORTFOLIO GALLERY CSS */
+.container{
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 5px;
+
+}
+
+img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.portfolio {
+  display: flex;
+  
+}
+
+.port-contain{
+    margin: 20px 30px 20px 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.port-header{
+  justify-items: center;
+}
+/*EXPERIENCE SECTION CSS*/
+#listed-exp li{
+  list-style: none;
+  text-overflow: wrap;
+
+}
+
+.resume-section{
+  margin: 20px 30px 20px 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
-/* PORTFOLIO GALLERY CSS */
+
 
 
 
 /* FOOTER/ CONTACT CSS */
 
-footer{
-  background-color: #00092C; 
-  padding: 0;
-  margin: 0;
+#socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 10px;
  
 }
 
 
-footer li{
+#socials li{
   list-style: none;
   display: inline-block;
   
 }
 
-footer li a{
-  color:#edf0f1;
+#socials li a{
+  color:#00092C;
   padding: 0px 20px;
 }
 
+/* MEDIA QUERIES BEGIN HERE */
+
+
+@media all and (max-width: 500px){
+  img {
+    position: relative;
+    height: 250px;
+    padding: 20px;
+    opacity: calc(80%)
+  }
+  
+
+  .arrow{
+    visibility: hidden;
+
+  }
+
+  #more{
+    visibility: visible;
+  }
+
+}
+
+@media all and (max-width: 480px){
+    img {
+      position: relative;
+      height: 150px;
+      padding: 20px;
+      opacity: calc(80%)
+    }
+    
+    .intro-text h2 h3 {
+      text-size-adjust:inherit;
+    }
+    
+    .arrow {
+      visibility: hidden;
+    
+    }
+    
+    #more {
+      visibility: visible;
+    }
+
+    #game {
+      visibility: hidden;
+    }
+
+
+}
