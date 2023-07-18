@@ -1,3 +1,13 @@
+/* Colors and Elements
+#FFBF1F - Amber Yellow
+#219EBC - Blue Green
+#8ECAE6 - Pale Blue
+#FB8500 - Orange
+#023047 - Navy Blue
+
+*/
+
+
 *{
   margin: 0;
   padding: 0;
@@ -83,18 +93,18 @@ img{
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-image:  url('images/pexels-stas-knop-1579240.jpg');
+  background-color: #FFBF1F;
   color: rgb(255, 255, 255);
   
 }
 
-/* #box{
+ /* #box{
   background-color: #06A8FF;
   padding-left: 20px;
   opacity: .7;
   height: 100%;
   width: 60%;
-  
+   
 
 } */
 
@@ -165,8 +175,6 @@ img{
     transform: rotate(45deg) translate(-20px, -20px);
   }
 }
-
-
 
 
 
