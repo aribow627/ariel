@@ -11,27 +11,46 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
  
 }
 
 section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  scroll-snap-align: center;
+}
+
+.container {
+  scroll-snap-type:proximity;
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  
 }
 
 
-.wrapper{
+/* .wrapper{
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
   overflow-x: hidden;
 
-}
+} */
 
-canvas{
+canvas {
   background-color: aqua;
-}
+  /* scroll-snap-type: y mandatory;
+  scroll-snap-align: center;
+  height: 100vh;
+  width: 100vw; */
+} 
 
 
 /*NAVBAR CSS*/
@@ -50,8 +69,6 @@ canvas{
   color: black;
   
 }
-
-
 
 /*HEADER CSS*/
 h3{
@@ -73,9 +90,6 @@ h5{
 
 
 /* INTRO CSS */
-
-
-
 
 img{
   position: relative;
@@ -244,15 +258,23 @@ img:hover{
 
 }
 
+button.resume-btn {
+  background-color: #00092C;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button.i {
+  color: blue;
+}
+
 .resume-section{
+  column-count: 2;
   margin: 20px 30px 20px 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
-
-
-
 
 
 /* FOOTER/ CONTACT CSS */
@@ -276,6 +298,24 @@ img:hover{
 #socials li a{
   color:#00092C;
   padding: 0px 20px;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.footer-link:hover{
+  color:pink;
+}
+
+.footer li a{
+  color: black;
+
 }
 
 /* MEDIA QUERIES BEGIN HERE */
